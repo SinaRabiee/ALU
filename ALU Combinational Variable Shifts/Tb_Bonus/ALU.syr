@@ -1,0 +1,763 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc6slx25t-3-csg324
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\XOR8.vhd" into library work
+Parsing entity <XOR8>.
+Parsing architecture <Behavioral> of entity <xor8>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\XNOR8.vhd" into library work
+Parsing entity <XNOR8>.
+Parsing architecture <Behavioral> of entity <xnor8>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\USUB.vhd" into library work
+Parsing entity <USUB>.
+Parsing architecture <Behavioral> of entity <usub>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\UMUL.vhd" into library work
+Parsing entity <UMUL>.
+Parsing architecture <Behavioral> of entity <umul>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\UADD_CARRY.vhd" into library work
+Parsing entity <UADD_CARRY>.
+Parsing architecture <Behavioral> of entity <uadd_carry>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\UADD.vhd" into library work
+Parsing entity <UADD>.
+Parsing architecture <Behavioral> of entity <uadd>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\SMUL.vhd" into library work
+Parsing entity <SMUL>.
+Parsing architecture <Behavioral> of entity <smul>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\SADD.vhd" into library work
+Parsing entity <SADD>.
+Parsing architecture <Behavioral> of entity <sadd>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\RotL_CARRY.vhd" into library work
+Parsing entity <RotL_CARRY>.
+Parsing architecture <Behavioral> of entity <rotl_carry>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\RotL.vhd" into library work
+Parsing entity <RotL>.
+Parsing architecture <Behavioral> of entity <rotl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\OR8.vhd" into library work
+Parsing entity <OR8>.
+Parsing architecture <Behavioral> of entity <or8>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\LSR.vhd" into library work
+Parsing entity <LSR>.
+Parsing architecture <Behavioral> of entity <lsr>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\LSL.vhd" into library work
+Parsing entity <LSL>.
+Parsing architecture <Behavioral> of entity <lsl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\BCD2BIN.vhd" into library work
+Parsing entity <BCD2BIN>.
+Parsing architecture <Behavioral> of entity <bcd2bin>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\ASR.vhd" into library work
+Parsing entity <ASR>.
+Parsing architecture <Behavioral> of entity <asr>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\AND8.vhd" into library work
+Parsing entity <AND8>.
+Parsing architecture <Behavioral> of entity <and8>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\Project\Tb_Bonus\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Structral> of entity <alu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ALU> (architecture <Structral>) from library <work>.
+
+Elaborating entity <AND8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <OR8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <XOR8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <XNOR8> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UADD> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SADD> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UADD_CARRY> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SMUL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UMUL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <USUB> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RotL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RotL_CARRY> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LSR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ASR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <LSL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD2BIN> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\ALU.vhd".
+INFO:Xst:3210 - "C:\Users\ASUS\Desktop\Project\Tb_Bonus\ALU.vhd" line 337: Output port <N> of the instance <u8> is unconnected or connected to loadless signal.
+    Found 1-bit 15-to-1 multiplexer for signal <N_TrN[0]_MUX_735_o> created at line 368.
+    Found 1-bit 16-to-1 multiplexer for signal <Cout_TrCout[0]_MUX_751_o> created at line 368.
+    Found 1-bit 16-to-1 multiplexer for signal <V_TrV[0]_MUX_767_o> created at line 368.
+    Found 1-bit 16-to-1 multiplexer for signal <Z_TrZ[0]_MUX_783_o> created at line 368.
+    Found 1-bit 16-to-1 multiplexer for signal <X_bin_pal_TrBinPal[0]_MUX_799_o> created at line 368.
+    Found 1-bit 16-to-1 multiplexer for signal <X_prime_TrPrime[0]_MUX_815_o> created at line 368.
+    Found 1-bit 16-to-1 multiplexer for signal <F_active_TrActive[0]_MUX_831_o> created at line 368.
+    Found 8-bit 16-to-1 multiplexer for signal <X> created at line 15.
+    Found 8-bit 16-to-1 multiplexer for signal <Y> created at line 15.
+    Summary:
+	inferred   9 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <AND8>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\AND8.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <AND8> synthesized.
+
+Synthesizing Unit <rem_8u_2u>.
+    Related source file is "".
+    Found 10-bit adder for signal <n0227> created at line 0.
+    Found 10-bit adder for signal <GND_8_o_b[1]_add_1_OUT> created at line 0.
+    Found 9-bit adder for signal <n0231> created at line 0.
+    Found 9-bit adder for signal <GND_8_o_b[1]_add_3_OUT> created at line 0.
+    Found 8-bit adder for signal <n0235> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[1]_add_5_OUT> created at line 0.
+    Found 8-bit adder for signal <n0239> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_8_o_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <n0243> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_8_o_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <n0247> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_8_o_add_11_OUT> created at line 0.
+    Found 8-bit adder for signal <n0251> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_8_o_add_13_OUT> created at line 0.
+    Found 8-bit adder for signal <n0255> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_8_o_add_15_OUT> created at line 0.
+    Found 8-bit adder for signal <n0259> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_8_o_add_17_OUT> created at line 0.
+    Found 10-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <rem_8u_2u> synthesized.
+
+Synthesizing Unit <rem_8u_3u>.
+    Related source file is "".
+    Found 11-bit adder for signal <n0233> created at line 0.
+    Found 11-bit adder for signal <GND_9_o_b[2]_add_1_OUT> created at line 0.
+    Found 10-bit adder for signal <n0237> created at line 0.
+    Found 10-bit adder for signal <GND_9_o_b[2]_add_3_OUT> created at line 0.
+    Found 9-bit adder for signal <n0241> created at line 0.
+    Found 9-bit adder for signal <GND_9_o_b[2]_add_5_OUT> created at line 0.
+    Found 8-bit adder for signal <n0245> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[2]_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <n0249> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_9_o_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <n0253> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_9_o_add_11_OUT> created at line 0.
+    Found 8-bit adder for signal <n0257> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_9_o_add_13_OUT> created at line 0.
+    Found 8-bit adder for signal <n0261> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_9_o_add_15_OUT> created at line 0.
+    Found 8-bit adder for signal <n0265> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_9_o_add_17_OUT> created at line 0.
+    Found 11-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <rem_8u_3u> synthesized.
+
+Synthesizing Unit <rem_8u_4u>.
+    Related source file is "".
+    Found 12-bit adder for signal <n0241> created at line 0.
+    Found 12-bit adder for signal <GND_10_o_b[3]_add_1_OUT> created at line 0.
+    Found 11-bit adder for signal <n0245> created at line 0.
+    Found 11-bit adder for signal <GND_10_o_b[3]_add_3_OUT> created at line 0.
+    Found 10-bit adder for signal <n0249> created at line 0.
+    Found 10-bit adder for signal <GND_10_o_b[3]_add_5_OUT> created at line 0.
+    Found 9-bit adder for signal <n0253> created at line 0.
+    Found 9-bit adder for signal <GND_10_o_b[3]_add_7_OUT> created at line 0.
+    Found 8-bit adder for signal <n0257> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[3]_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <n0261> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_10_o_add_11_OUT> created at line 0.
+    Found 8-bit adder for signal <n0265> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_10_o_add_13_OUT> created at line 0.
+    Found 8-bit adder for signal <n0269> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_10_o_add_15_OUT> created at line 0.
+    Found 8-bit adder for signal <n0273> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_10_o_add_17_OUT> created at line 0.
+    Found 12-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  65 Multiplexer(s).
+Unit <rem_8u_4u> synthesized.
+
+Synthesizing Unit <OR8>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\OR8.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <OR8> synthesized.
+
+Synthesizing Unit <XOR8>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\XOR8.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <XOR8> synthesized.
+
+Synthesizing Unit <XNOR8>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\XNOR8.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <XNOR8> synthesized.
+
+Synthesizing Unit <UADD>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\UADD.vhd".
+    Found 9-bit adder for signal <S> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <UADD> synthesized.
+
+Synthesizing Unit <SADD>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\SADD.vhd".
+    Found 9-bit adder for signal <SS> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <SADD> synthesized.
+
+Synthesizing Unit <UADD_CARRY>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\UADD_CARRY.vhd".
+    Found 9-bit adder for signal <n0064> created at line 27.
+    Found 9-bit adder for signal <S> created at line 27.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <UADD_CARRY> synthesized.
+
+Synthesizing Unit <SMUL>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\SMUL.vhd".
+    Found 8x8-bit multiplier for signal <SM> created at line 27.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Multiplexer(s).
+Unit <SMUL> synthesized.
+
+Synthesizing Unit <UMUL>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\UMUL.vhd".
+    Found 8x8-bit multiplier for signal <M> created at line 26.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Multiplexer(s).
+Unit <UMUL> synthesized.
+
+Synthesizing Unit <USUB>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\USUB.vhd".
+    Found 9-bit adder for signal <S> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <USUB> synthesized.
+
+Synthesizing Unit <RotL>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\RotL.vhd".
+    Found 3-bit subtractor for signal <GND_22_o_GND_22_o_sub_3_OUT<2:0>> created at line 37.
+    Found 8-bit 7-to-1 multiplexer for signal <n0067> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <RotL> synthesized.
+
+Synthesizing Unit <RotL_CARRY>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\RotL_CARRY.vhd".
+    Found 3-bit subtractor for signal <GND_23_o_GND_23_o_sub_5_OUT<2:0>> created at line 41.
+    Found 9-bit 8-to-1 multiplexer for signal <n0074> created at line 38.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <RotL_CARRY> synthesized.
+
+Synthesizing Unit <LSR>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\LSR.vhd".
+    Found 3-bit subtractor for signal <GND_24_o_GND_24_o_sub_5_OUT<2:0>> created at line 44.
+    Found 1-bit 5-to-1 multiplexer for signal <GND_24_o_X_19_o_Mux_8_o> created at line 44.
+    Found 1-bit 7-to-1 multiplexer for signal <GND_24_o_X_19_o_Mux_9_o> created at line 44.
+    Found 1-bit 7-to-1 multiplexer for signal <GND_24_o_X_19_o_Mux_10_o> created at line 44.
+    Found 1-bit 7-to-1 multiplexer for signal <GND_24_o_X_19_o_Mux_11_o> created at line 44.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_24_o_I1[7]_Mux_13_o> created at line 45.
+    Found 8-bit comparator greater for signal <GND_24_o_I2U[7]_LessThan_4_o> created at line 40
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  21 Multiplexer(s).
+Unit <LSR> synthesized.
+
+Synthesizing Unit <ASR>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\ASR.vhd".
+    Found 9-bit adder for signal <n0076> created at line 39.
+    Found 9-bit adder for signal <n0078> created at line 46.
+    Found 9-bit adder for signal <n0079> created at line 46.
+    Found 9-bit adder for signal <n0080> created at line 46.
+    Found 9-bit adder for signal <n0081> created at line 46.
+    Found 9-bit adder for signal <n0082> created at line 46.
+    Found 9-bit adder for signal <n0083> created at line 46.
+    Found 9-bit adder for signal <n0084> created at line 46.
+    Found 3-bit subtractor for signal <GND_25_o_GND_25_o_sub_6_OUT<2:0>> created at line 46.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_25_o_I1[7]_Mux_25_o> created at line 46.
+    Found 8-bit 7-to-1 multiplexer for signal <n0109> created at line 35.
+    Found 8-bit comparator greater for signal <GND_25_o_I2U[7]_LessThan_5_o> created at line 42
+    Summary:
+	inferred   9 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  10 Multiplexer(s).
+Unit <ASR> synthesized.
+
+Synthesizing Unit <LSL>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\LSL.vhd".
+    Found 3-bit subtractor for signal <GND_26_o_GND_26_o_sub_5_OUT<2:0>> created at line 44.
+    Found 3-bit subtractor for signal <GND_26_o_GND_26_o_sub_14_OUT<2:0>> created at line 45.
+    Found 1-bit 7-to-1 multiplexer for signal <GND_26_o_X_21_o_Mux_6_o> created at line 44.
+    Found 1-bit 7-to-1 multiplexer for signal <GND_26_o_X_21_o_Mux_7_o> created at line 44.
+    Found 1-bit 6-to-1 multiplexer for signal <GND_26_o_X_21_o_Mux_8_o> created at line 44.
+    Found 1-bit 6-to-1 multiplexer for signal <GND_26_o_X_21_o_Mux_9_o> created at line 44.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_26_o_I1[7]_Mux_14_o> created at line 45.
+    Found 8-bit comparator greater for signal <GND_26_o_I2U[7]_LessThan_4_o> created at line 40
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  18 Multiplexer(s).
+Unit <LSL> synthesized.
+
+Synthesizing Unit <BCD2BIN>.
+    Related source file is "C:\Users\ASUS\Desktop\Project\Tb_Bonus\BCD2BIN.vhd".
+    Found 32-bit adder for signal <n0083> created at line 37.
+    Found 32-bit adder for signal <n0086> created at line 37.
+    Found 32-bit adder for signal <SN> created at line 37.
+    Found 32x5-bit multiplier for signal <n0065> created at line 37.
+    Found 32x8-bit multiplier for signal <n0067> created at line 37.
+    Found 32x11-bit multiplier for signal <n0069> created at line 37.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <BCD2BIN> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 5
+ 32x11-bit multiplier                                  : 1
+ 32x5-bit multiplier                                   : 1
+ 32x8-bit multiplier                                   : 1
+ 8x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 1390
+ 10-bit adder                                          : 152
+ 11-bit adder                                          : 122
+ 12-bit adder                                          : 62
+ 3-bit subtractor                                      : 6
+ 32-bit adder                                          : 3
+ 8-bit adder                                           : 880
+ 9-bit adder                                           : 165
+# Comparators                                          : 687
+ 10-bit comparator lessequal                           : 76
+ 11-bit comparator lessequal                           : 61
+ 12-bit comparator lessequal                           : 31
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 440
+ 9-bit comparator lessequal                            : 76
+# Multiplexers                                         : 5029
+ 1-bit 15-to-1 multiplexer                             : 1
+ 1-bit 16-to-1 multiplexer                             : 6
+ 1-bit 2-to-1 multiplexer                              : 4918
+ 1-bit 5-to-1 multiplexer                              : 1
+ 1-bit 6-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 5
+ 1-bit 8-to-1 multiplexer                              : 3
+ 2-bit 2-to-1 multiplexer                              : 15
+ 3-bit 2-to-1 multiplexer                              : 30
+ 4-bit 2-to-1 multiplexer                              : 31
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 11
+ 8-bit 7-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+ 9-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 67
+ 1-bit xor2                                            : 65
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD2BIN>.
+	The following adders/subtractors are grouped into adder tree <Madd_SN_Madd1> :
+ 	<Madd_n0083_Madd> in block <BCD2BIN>, 	<Madd_n0086_Madd> in block <BCD2BIN>, 	<Madd_SN_Madd> in block <BCD2BIN>.
+	Multiplier <Mmult_n0069> in block <BCD2BIN> and adder/subtractor <ADDER_FOR_MULTADD_Madd2> in block <BCD2BIN> are combined into a MAC<Maddsub_n0069>.
+	Multiplier <Mmult_n0067> in block <BCD2BIN> and adder/subtractor <ADDER_FOR_MULTADD_Madd1> in block <BCD2BIN> are combined into a MAC<Maddsub_n0067>.
+	Multiplier <Mmult_n0065> in block <BCD2BIN> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <BCD2BIN> are combined into a MAC<Maddsub_n0065>.
+Unit <BCD2BIN> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 3
+ 5x11-to-16-bit MAC                                    : 1
+ 5x5-to-16-bit MAC                                     : 1
+ 5x8-to-16-bit MAC                                     : 1
+# Multipliers                                          : 2
+ 8x8-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 702
+ 2-bit adder carry in                                  : 15
+ 3-bit adder carry in                                  : 30
+ 3-bit subtractor                                      : 6
+ 4-bit adder carry in                                  : 31
+ 8-bit adder                                           : 8
+ 8-bit adder carry in                                  : 608
+ 9-bit adder                                           : 3
+ 9-bit adder carry in                                  : 1
+# Comparators                                          : 687
+ 10-bit comparator lessequal                           : 76
+ 11-bit comparator lessequal                           : 61
+ 12-bit comparator lessequal                           : 31
+ 8-bit comparator greater                              : 3
+ 8-bit comparator lessequal                            : 440
+ 9-bit comparator lessequal                            : 76
+# Multiplexers                                         : 5029
+ 1-bit 15-to-1 multiplexer                             : 1
+ 1-bit 16-to-1 multiplexer                             : 6
+ 1-bit 2-to-1 multiplexer                              : 4918
+ 1-bit 5-to-1 multiplexer                              : 1
+ 1-bit 6-to-1 multiplexer                              : 2
+ 1-bit 7-to-1 multiplexer                              : 5
+ 1-bit 8-to-1 multiplexer                              : 3
+ 2-bit 2-to-1 multiplexer                              : 15
+ 3-bit 2-to-1 multiplexer                              : 30
+ 4-bit 2-to-1 multiplexer                              : 31
+ 8-bit 16-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 11
+ 8-bit 7-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+ 9-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 67
+ 1-bit xor2                                            : 65
+ 8-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <RotL> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 9.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ALU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 942
+#      GND                         : 1
+#      LUT2                        : 68
+#      LUT3                        : 50
+#      LUT4                        : 82
+#      LUT5                        : 176
+#      LUT6                        : 456
+#      MUXCY                       : 32
+#      MUXF7                       : 31
+#      MUXF8                       : 12
+#      VCC                         : 1
+#      XORCY                       : 33
+# IO Buffers                       : 44
+#      IBUF                        : 21
+#      OBUF                        : 23
+# DSPs                             : 5
+#      DSP48A1                     : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  832  out of  15032     5%  
+    Number used as Logic:               832  out of  15032     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    832
+   Number with an unused Flip Flop:     832  out of    832   100%  
+   Number with an unused LUT:             0  out of    832     0%  
+   Number of fully used LUT-FF pairs:     0  out of    832     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    190    23%  
+
+Specific Feature Utilization:
+ Number of DSP48A1s:                      5  out of     38    13%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 29.502ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12277617 / 23
+-------------------------------------------------------------------------
+Delay:               29.502ns (Levels of Logic = 25)
+  Source:            B<3> (PAD)
+  Destination:       X_prime (PAD)
+
+  Data Path: B<3> to X_prime
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            90   1.222   2.156  B_3_IBUF (B_3_IBUF)
+     LUT5:I0->O            2   0.203   0.845  u12/I2U[7]_PWR_24_o_rem_2/Mmux_a[4]_a[7]_MUX_257_o11 (u12/I2U[7]_PWR_24_o_rem_2/a[4]_a[7]_MUX_257_o)
+     LUT3:I0->O            2   0.205   0.617  u12/I2U[7]_PWR_24_o_rem_2/Mmux_a[6]_a[7]_MUX_263_o111 (u12/I2U[7]_PWR_24_o_rem_2/Mmux_a[6]_a[7]_MUX_263_o11)
+     LUT6:I5->O            9   0.205   1.077  u12/I2U[7]_PWR_24_o_rem_2/Madd_a[7]_GND_10_o_add_13_OUT_Madd_cy<6>1 (u12/I2U[7]_PWR_24_o_rem_2/Madd_a[7]_GND_10_o_add_13_OUT_Madd_cy<6>)
+     LUT5:I1->O            3   0.203   1.015  u12/I2U[7]_PWR_24_o_rem_2/Mmux_a[4]_a[7]_MUX_265_o1 (u12/I2U[7]_PWR_24_o_rem_2/Madd_a[7]_GND_10_o_add_15_OUT_Madd_lut<4>)
+     LUT6:I0->O            7   0.203   1.002  u12/I2U[7]_PWR_24_o_rem_2/BUS_0008_INV_250_o (u12/I2U[7]_PWR_24_o_rem_2/BUS_0008_INV_250_o1)
+     LUT6:I3->O            1   0.205   0.924  u12/I2U[7]_PWR_24_o_rem_2/BUS_0009_INV_259_o13 (u12/I2U[7]_PWR_24_o_rem_2/BUS_0009_INV_259_o12)
+     LUT6:I1->O            4   0.203   0.788  u12/I2U[7]_PWR_24_o_rem_2/BUS_0009_INV_259_o14 (u12/I2U[7]_PWR_24_o_rem_2/BUS_0009_INV_259_o)
+     LUT4:I2->O            9   0.203   1.194  u12/Msub_GND_23_o_GND_23_o_sub_5_OUT<2:0>_xor<1>11 (u12/GND_23_o_GND_23_o_sub_5_OUT<1>)
+     LUT6:I0->O            2   0.203   0.864  u12/GND_23_o_GND_23_o_sub_5_OUT<1>2 (u12/GND_23_o_GND_23_o_sub_5_OUT<1>_mmx_out)
+     LUT5:I1->O           23   0.203   1.154  u12/Mmux_O1N71 (TrRotL_CARRYX<5>)
+     LUT6:I5->O            5   0.205   1.059  u12/O1[7]_PWR_24_o_rem_30/Madd_a[7]_GND_8_o_add_9_OUT_Madd_cy<6>111 (u12/O1[7]_PWR_24_o_rem_30/Madd_a[7]_GND_8_o_add_9_OUT_Madd_cy<6>11)
+     LUT6:I1->O            5   0.203   1.079  u12/O1[7]_PWR_24_o_rem_38/BUS_0006_INV_232_o1 (u12/O1[7]_PWR_24_o_rem_38/BUS_0006_INV_232_o)
+     LUT6:I0->O            2   0.203   0.864  u12/O1[7]_PWR_24_o_rem_38/Mmux_a[0]_a[7]_MUX_261_o15 (u12/O1[7]_PWR_24_o_rem_38/Madd_a[7]_GND_10_o_add_13_OUT_Madd_lut<5>)
+     LUT5:I1->O            5   0.203   0.943  u12/O1[7]_PWR_24_o_rem_38/BUS_0007_INV_241_o11 (u12/O1[7]_PWR_24_o_rem_38/BUS_0007_INV_241_o1)
+     LUT3:I0->O            2   0.205   0.961  u12/O1[7]_PWR_24_o_rem_38/BUS_0007_INV_241_o2 (u12/O1[7]_PWR_24_o_rem_38/BUS_0007_INV_241_o)
+     LUT5:I0->O            3   0.203   0.995  u12/O1[7]_PWR_24_o_rem_38/Mmux_a[0]_a[7]_MUX_269_o141 (u12/O1[7]_PWR_24_o_rem_38/Madd_a[7]_GND_10_o_add_15_OUT_Madd_lut<4>)
+     LUT6:I1->O            2   0.203   0.961  u12/O1[7]_PWR_24_o_rem_38/BUS_0008_INV_250_o1 (u12/O1[7]_PWR_24_o_rem_38/BUS_0008_INV_250_o)
+     LUT6:I1->O            1   0.203   0.580  u12/O1[7]_PWR_24_o_rem_38/Mmux_a[0]_a[7]_MUX_277_o111 (u12/O1[7]_PWR_24_o_rem_38/a[1]_a[7]_MUX_276_o)
+     LUT6:I5->O            1   0.205   0.684  u12/Mmux_X_prime110 (u12/Mmux_X_prime110)
+     LUT4:I2->O            1   0.203   0.808  u12/Mmux_X_prime111 (TrPrime<11>)
+     LUT6:I3->O            1   0.205   0.000  Mmux_X_prime_TrPrime[0]_MUX_815_o_5 (Mmux_X_prime_TrPrime[0]_MUX_815_o_5)
+     MUXF7:I0->O           1   0.131   0.000  Mmux_X_prime_TrPrime[0]_MUX_815_o_3_f7 (Mmux_X_prime_TrPrime[0]_MUX_815_o_3_f7)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_X_prime_TrPrime[0]_MUX_815_o_2_f8 (X_prime_OBUF)
+     OBUF:I->O                 2.571          X_prime_OBUF (X_prime)
+    ----------------------------------------
+    Total                     29.502ns (8.353ns logic, 21.149ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 30.64 secs
+ 
+--> 
+
+Total memory usage is 4590032 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

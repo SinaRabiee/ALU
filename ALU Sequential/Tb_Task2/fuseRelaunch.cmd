@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/Project/ALU Sequential/Tb_Task2/Tb_Task2_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/Project/ALU Sequential/Tb_Task2/Tb_Task2_beh.prj" "work.Tb_Task2" 

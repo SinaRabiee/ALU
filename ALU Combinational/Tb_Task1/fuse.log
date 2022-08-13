@@ -1,0 +1,54 @@
+Running: C:\Xilinx1\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/ASUS/Desktop/Project/Tb_Task1/Tb_Task1_isim_beh.exe -prj C:/Users/ASUS/Desktop/Project/Tb_Task1/Tb_Task1_beh.prj work.Tb_Task1 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/XOR8.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/XNOR8.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/USUB.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/UMUL.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/UADD_CARRY.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/UADD.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/SMUL.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/SADD.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/RotL_CARRY.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/RotL.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/OR8.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/LSR.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/LSL.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/BCD2BIN.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/ASR.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/AND8.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/ASUS/Desktop/Project/Tb_Task1/Tb_Task1.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity AND8 [and8_default]
+Compiling architecture behavioral of entity OR8 [or8_default]
+Compiling architecture behavioral of entity XOR8 [xor8_default]
+Compiling architecture behavioral of entity XNOR8 [xnor8_default]
+Compiling architecture behavioral of entity UADD [uadd_default]
+Compiling architecture behavioral of entity SADD [sadd_default]
+Compiling architecture behavioral of entity UADD_CARRY [uadd_carry_default]
+Compiling architecture behavioral of entity SMUL [smul_default]
+Compiling architecture behavioral of entity UMUL [umul_default]
+Compiling architecture behavioral of entity USUB [usub_default]
+Compiling architecture behavioral of entity RotL [rotl_default]
+Compiling architecture behavioral of entity RotL_CARRY [rotl_carry_default]
+Compiling architecture behavioral of entity LSR [lsr_default]
+Compiling architecture behavioral of entity ASR [asr_default]
+Compiling architecture behavioral of entity LSL [lsl_default]
+Compiling architecture behavioral of entity BCD2BIN [bcd2bin_default]
+Compiling architecture structral of entity ALU [alu_default]
+Compiling architecture behavior of entity tb_task1
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 40 VHDL Units
+Built simulation executable C:/Users/ASUS/Desktop/Project/Tb_Task1/Tb_Task1_isim_beh.exe
+Fuse Memory Usage: 39516 KB
+Fuse CPU Usage: 1062 ms

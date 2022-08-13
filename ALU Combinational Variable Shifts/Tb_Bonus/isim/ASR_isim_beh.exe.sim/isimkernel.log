@@ -1,0 +1,28 @@
+Command line:
+   ASR_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  27002
+
+Sun Jul 18 23:56:36 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5155.25 Meg
+
+ Total Signals          : 13
+ Total Nets             : 51
+ Total Signal Drivers   : 14
+ Total Blocks           : 5
+ Total Primitive Blocks : 5
+ Total Processes        : 13
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 552
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5155.25 Meg
+
+Sun Jul 18 23:56:43 2021
+

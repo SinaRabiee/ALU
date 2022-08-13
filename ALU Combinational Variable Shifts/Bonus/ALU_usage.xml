@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="14">
+<DesignStatistics TimeStamp="Sat Jul 17 22:03:03 2021"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="14">
+<attrib name="value" value="44"/></item>
+<item name="AGG_IO" rev="14">
+<attrib name="value" value="44"/></item>
+<item name="AGG_SLICE" rev="14">
+<attrib name="value" value="259"/></item>
+<item name="NUM_BONDED_IOB" rev="14">
+<attrib name="value" value="44"/></item>
+<item name="NUM_BSFULL" rev="14">
+<attrib name="value" value="3"/></item>
+<item name="NUM_BSLUTONLY" rev="14">
+<attrib name="value" value="713"/></item>
+<item name="NUM_BSUSED" rev="14">
+<attrib name="value" value="716"/></item>
+<item name="NUM_DSP48A1" rev="14">
+<attrib name="value" value="5"/></item>
+<item name="NUM_LOGIC_O5ANDO6" rev="14">
+<attrib name="value" value="114"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="14">
+<attrib name="value" value="602"/></item>
+<item name="NUM_LUT_RT_O5" rev="14">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICEL" rev="14">
+<attrib name="value" value="28"/></item>
+<item name="NUM_SLICEX" rev="14">
+<attrib name="value" value="231"/></item>
+<item name="NUM_SLICE_CARRY4" rev="14">
+<attrib name="value" value="9"/></item>
+<item name="NUM_SLICE_CYINIT" rev="14">
+<attrib name="value" value="834"/></item>
+<item name="NUM_SLICE_F7MUX" rev="14">
+<attrib name="value" value="31"/></item>
+<item name="NUM_SLICE_F8MUX" rev="14">
+<attrib name="value" value="12"/></item>
+<item name="NUM_SLICE_LATCHLOGIC" rev="14">
+<attrib name="value" value="3"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="14">
+<attrib name="value" value="256"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/Project/Tb_Bonus/Tb_Bonus_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/Project/Tb_Bonus/Tb_Bonus_beh.prj" "work.Tb_Bonus" 
